@@ -1,16 +1,202 @@
+/*This websit is called "El Puke-o". The color scheme is supposed to be ironic! Its not because I'm bad at colors. It's definitely not that.*/
 
 /* html5 reset css file */
 @import url('html5reset.css');
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
 
 /* standard css for desktop browsers */
-body {
-	background-color:gainsboro;
+header{
+	background-color: #333300;
+	max-width: 100%;
+	height: 150px;
 }
 
+h1 {
+	color: grey;
+	font-family: Times, serif;
+	font-size: 60px;
+	max-width: 500px;
+	margin-left: 10%;
+	text-shadow: 3px 3px black;
+}
+
+h2 {
+	color: #333300;
+	background-color: #e6ac00;
+	font-family: 'Oleo Script', serif;
+	font-size: 20px;
+	padding-bottom: 22px;
+	padding-left: 5px;
+	padding-top: 3px;
+	margin-left: 18%;
+	max-width: 500px;
+	display: block;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: 'Oleo Script', serif;
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+li {
+	padding: 2px;
+	color: #e6ac00;
+}
+
+a {
+	color: #cc0000;
+}
+
+
+/*--------Large blocks that will have small blocks within--------------*/
+.intro{
+	width: 80%;
+}
+
+.main{
+	width: 80%;
+}
+
+.sidebar{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 20%;
+	background-color: #000066;
+
+}
+
+/*------------------Smaller Blocks in intro-------------------------*/
+.summary{
+	/*width: 80%;*/
+	color: #e6ac00;
+	padding: 5px;
+	border-bottom: dotted #333300;
+}
+
+.preamble{
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+
+/*-------------------------Smaller Blocks in main-------------------------*/
+.explanation{
+	padding: 10px;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 40%;
+	margin-right: 1%;
+	margin-left: 5%;
+}
+
+.participation{
+	padding: 10px;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 40%;
+	margin-left: 1%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+
+}
+
+.benefits{
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+	
+.requirements{
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+/*---------------------- Things in Sidebar ---------------------*/
+.wrapper{
+	padding: 1px;
+}
+
+.archives{
+	margin-top: 30px;
+}
+
+.resources{
+	margin-top: 30px;
+}
+
+aside h3{
+	color: #e6ac00;
+}
+
+/*------------------Other--------------*/
+body {
+	background-color:#7a7a52;
+	color: #333300;
+	font-size: 15px;
+}
+
+
 /* override css for mobile browsers */
-@media all and (min-width:320px) and (max-width:400px) {
+@media all and (min-width:320px) and (max-width: 800px) {
 	body {
 		font-size:1em;
-		background-color:orange;
+	}
+
+	header{
+		height: 70px;
+	}
+
+	h1{
+		font-size: 40px;
+		margin: auto;
+		text-align: center;
+	}
+
+	h2{
+		visibility: hidden;
+	}
+
+	.explanation{
+		width: 90%;
+		padding: 0%;
+	}
+
+	.participation{
+		width: 90%;
+		display: inline;
+	}
+
+	.sidebar{
+		position: static;
+		width: 100%;
+		border-top: dotted #333300;
+		background-color: #7a7a52;
+		text-align: center;
+	}
+
+	.sidebar h3{
+		color: #333300;
+	}
+
+	.intro{
+		width: 100%;
+	}
+	.main{
+		width:100%;
 	}
 }
